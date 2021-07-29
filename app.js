@@ -11,7 +11,7 @@ const User = require("./models/User");
 const index = require('./models/index');
 index();
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000
 
 const app = express();
 
